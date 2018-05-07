@@ -26,7 +26,7 @@ class Utility:
     def setup(cls):
         pygame.init()
         cls.display = pygame.display
-        cls.screen = cls.display.set_mode((800, 600))
+        cls.screen = cls.display.set_mode((800, 600), pygame.locals.DOUBLEBUF)
         cls.group = {}
         cls.default_group = pygame.sprite.Group()
 
@@ -47,7 +47,7 @@ class Utility:
         font = pygame.font.Font(None, 36)
 
         while True:
-            clock.tick(60)
+            clock.tick(120)
             fps = clock.get_fps()
             text = font.render('%.2f fps' % (fps,), 1, (0, 255, 0))
             text_rect = text.get_rect()

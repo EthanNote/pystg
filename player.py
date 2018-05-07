@@ -28,7 +28,7 @@ class Player(pygame.sprite.Sprite):
             self.rect.move_ip((v[0] * self.speed_slow, v[1] * self.speed_slow))
         else:
             self.rect.move_ip((v[0] * self.speed, v[1] * self.speed))
-
+        #self.rect.move_ip(1,1)
         grect = Utility.screen.get_rect()
         self.rect.x = max(0, min(self.rect.x, grect.width - self.rect.width))
         self.rect.y = max(0, min(self.rect.y, grect.height - self.rect.height))

@@ -17,9 +17,8 @@ class Axis:
         self.keymap = {pygame.locals.K_LEFT: 0, pygame.locals.K_RIGHT: 1, pygame.locals.K_UP: 2,
                        pygame.locals.K_DOWN: 3, pygame.locals.K_LSHIFT: 4}
 
-
     def get_vector(self):
         return self.keydown_state[1] - self.keydown_state[0], self.keydown_state[3] - self.keydown_state[2]
 
     def get_shift(self):
-        return self.keydown_state[4]==1
+        return self.keydown_state[4] == 1

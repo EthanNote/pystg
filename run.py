@@ -1,6 +1,6 @@
 from pgzero.actor import Actor
 
-from bullet import Bullet
+from bullet import Bullet, Firing
 from handler import Handler
 from stgame import STGame
 
@@ -17,4 +17,4 @@ class TestHandler(Handler):
         self.a.draw()
 
 game = STGame()
-game.run(TestHandler)
+game.run(Firing)

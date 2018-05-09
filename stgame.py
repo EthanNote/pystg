@@ -211,7 +211,7 @@ class STGame:
 
         self.need_redraw = True
         while True:
-            dt = clock.tick(60) / 1000.0
+            dt = clock.tick(200) / 1000.0
 
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:

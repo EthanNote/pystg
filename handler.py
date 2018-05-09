@@ -7,3 +7,4 @@ class Handler:
 
     def onDraw(self):
         pass
+
